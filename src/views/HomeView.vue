@@ -29,7 +29,7 @@
             <div class="relative w-80 h-80 rounded-full overflow-hidden border-4 border-gray-200 dark:border-gray-700 shadow-lg animate-float">
               <!-- Replace with your actual image when available -->
               <img 
-                src="/profile-placeholder.jpg" 
+                src="/profile-placeholder.png" 
                 alt="Seward Richard Mupereri" 
                 class="w-full h-full object-cover"
                 onerror="this.onerror=null; this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'400\' viewBox=\'0 0 400 400\'%3E%3Crect width=\'400\' height=\'400\' fill=\'%23f3f4f6\'/%3E%3Ctext x=\'200\' y=\'200\' font-size=\'20\' text-anchor=\'middle\' alignment-baseline=\'middle\' font-family=\'sans-serif\' fill=\'%239ca3af\'%3E400 x 400%3C/text%3E%3C/svg%3E';"
