@@ -9,10 +9,10 @@
               Seward Richard Mupereri
             </h1>
             <p class="text-xl text-gray-600 dark:text-gray-400">
-              Automation Engineer | Software Engineer | Junior Solutions Consultant
+              Software Engineer | Automation Engineer | Web Developer
             </p>
             <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
-              Early-career Software Engineer skilled in full-stack Python development, cloud infrastructure, and AI-driven automation. Blend hands-on coding with research-oriented problem solving to turn complex, data-intensive workflows into reliable, production-ready systems.
+              Early‑career Software Engineer skilled in full‑stack Python development, cloud infrastructure, and AI‑driven automation. Blend hands‑on coding with research‑oriented problem solving to turn complex, data‑intensive workflows into reliable, production‑ready systems. Recent projects include a working‑paper automation suite that cut manual audit effort by 60 %, secured a new client contract, and on boarded 16 auditors in one week. Passionate about integrating machine‑learning and large‑language‑model techniques into development pipelines to accelerate delivery, raise product quality, and unlock measurable ROI.
             </p>
             <div class="flex flex-col sm:flex-row gap-4">
               <button @click="downloadResume" 
@@ -219,10 +219,18 @@ const certifications = [
 const featuredProjects = [
   {
     id: 1,
-    title: "UniExplorer – SA University Program Recommender",
-    description: "A semantic search system that enables students to find suitable university programs based on their results and interests.",
+    title: "UniExplorer – SA University Program Finder",
+    description: "Full-stack Next.js 14 web app that lets South-African students instantly discover the degree programmes they actually qualify for. Learners enter their subject marks & APS, filter by university, qualification type and duration, then bookmark favourites — everything served in <200 ms from a local SQLite DB.",
     image: "/projects/uniexplorer.jpg",
-    technologies: ["Streamlit", "FAISS", "Python"],
+    technologies: [
+      "Python",
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Radix UI",
+      "SQLite (better-sqlite3)"
+    ],
     tags: ["Data", "Python"],
     demoUrl: "#",
     codeUrl: "https://github.com/yourusername/uniexplorer"
@@ -230,22 +238,38 @@ const featuredProjects = [
   {
     id: 2,
     title: "Working Paper Automation Suite",
-    description: "Comprehensive audit process automation tool that generates working papers, validates data, and streamlines Excel reconciliation.",
+    description: "Python-first toolkit that ingests UIF payroll data, pre-populates Excel working papers, and slashes audit prep time by 60 %. A Streamlit front-end orchestrates batch file processing, real-time validation, and one-click mail-merge generation; a task-queue backend (Celery + Redis) keeps the UI snappy even on 500 MB+ workbooks.",
     image: "/projects/working-paper.jpg",
-    technologies: ["Python", "Pandas", "NumPy"],
+    technologies: [
+      "Python",
+      "Streamlit",
+      "openpyxl",
+      "Pandas",
+      "Tkinter",
+      "Win32com",
+      "Celery",
+      "Redis"
+    ],
     tags: ["Automation", "Python"],
     demoUrl: "",
     codeUrl: "https://github.com/yourusername/working-paper-automation"
   },
   {
     id: 3,
-    title: "Portfolio Website",
-    description: "Modern, responsive portfolio website built with Vue.js, Tailwind CSS, and shadcn-inspired components.",
+    title: "SRM - Personal Developer Portfolio",
+    description: "Lightning-fast Vue 3 + Vite site that showcases projects, tech stack, and career timeline in a single scroll. Uses a JSON-driven card system, shadcn-inspired components, dark/light theming, and ships perfect Lighthouse scores (100/100/100/100) straight from a 300 ms edge-cache.",
     image: "/projects/portfolio.jpg",
-    technologies: ["Vue.js", "Tailwind CSS", "Vite"],
+    technologies: [
+      "Vue 3",
+      "Vite",
+      "TypeScript",
+      "Tailwind CSS",
+      "shadcn-vue",
+      "Vue Router"
+    ],
     tags: ["Frontend"],
-    demoUrl: "#",
-    codeUrl: "https://github.com/yourusername/portfolio"
+    demoUrl: "https://sewardmupereri.netlify.app/",
+    codeUrl: "https://github.com/BabaRiri/portfolio"
   }
 ];
 
