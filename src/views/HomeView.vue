@@ -16,10 +16,12 @@
             </p>
             <div class="flex flex-col sm:flex-row gap-4">
               <button @click="downloadResume" 
-                class="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-lg transition-colors">
-                Download Resume
+                class="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-lg transition-colors"
+                aria-label="Download CV as PDF">
+                Download CV
               </button>
               <router-link to="/projects" 
+        git branch -av
                 class="border border-input hover:bg-accent hover:text-accent-foreground text-gray-700 dark:text-gray-300 px-6 py-3 rounded-lg text-center transition-colors">
                 View Projects
               </router-link>
@@ -176,6 +178,7 @@ import {
   ArrowRight as ArrowRightIcon,
   Shield as ShieldIcon
 } from 'lucide-vue-next';
+// Reminder: Place your resume.pdf in the public/ folder for download functionality.
 
 const skills = [
   { name: 'Python', icon: CodeIcon, iconColor: 'text-blue-500' },
@@ -276,11 +279,22 @@ const featuredProjects = [
 const downloadResume = () => {
   // In production, link to actual resume file
   const resumeUrl = '/resume.pdf';
-  const link = document.createElement('a');
-  link.href = resumeUrl;
-  link.setAttribute('download', 'Seward_Richard_Mupereri_Resume.pdf');
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
+  fetch(resumeUrl)
+    .then(response => {
+      if (!response.ok) throw new Error('Resume not found');
+      return response.blob();
+    })
+    .then(blob => {
+      const link = document.createElement('a');
+      link.href = URL.createObjectURL(blob);
+      link.setAttribute('download', 'Seward_Richard_Mupereri_Resume.pdf');
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(link.href);
+    })
+    .catch(() => {
+      alert('Resume file not found. Please ensure resume.pdf is in the public/ folder.');
+    });
 };
 </script>

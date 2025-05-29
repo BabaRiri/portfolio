@@ -165,7 +165,7 @@ import {
 onMounted(() => {
   console.log('ProjectsView component mounted');
   console.log('Projects data:', projects);
-  console.log('Available icons:', Object.keys(LucideIcons));
+
 });
 
 // Capture any rendering errors

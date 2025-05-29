@@ -25,5 +25,9 @@ export default defineConfig({
         }
       }
     }
+  },
+  // Enable Vitest SFC/component testing
+  test: {
+    environment: 'jsdom',
   }
-})
+});
