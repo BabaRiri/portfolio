@@ -3,7 +3,9 @@
     <!-- Projects Header -->
     <header class="bg-white dark:bg-gray-900 py-12 border-b border-gray-200 dark:border-gray-800 transition-colors duration-300">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 class="text-3xl font-bold text-gray-900 dark:text-white text-center">Projects Portfolio</h1>
+        <h1 class="text-3xl font-bold text-gray-900 dark:text-white text-center">
+          Projects Portfolio
+        </h1>
         <p class="mt-4 text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-center">
           A showcase of my development work with measurable business impact
         </p>
@@ -17,13 +19,13 @@
           <button 
             v-for="category in ['All', 'Python', 'Frontend', 'Data', 'Automation']" 
             :key="category"
-            @click="filterCategory = category === 'All' ? null : category.toLowerCase()"
             :class="[
               'px-4 py-2 rounded-full text-sm font-medium transition-colors',
               filterCategory === (category === 'All' ? null : category.toLowerCase())
                 ? 'bg-primary text-primary-foreground'
                 : 'bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800'
             ]"
+            @click="filterCategory = category === 'All' ? null : category.toLowerCase()"
           >
             {{ category }}
           </button>
@@ -48,7 +50,7 @@
                 :alt="project.title"
                 class="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-500"
                 onerror="this.onerror=null; this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'1200\' height=\'675\' viewBox=\'0 0 1200 675\'%3E%3Crect width=\'1200\' height=\'675\' fill=\'%23f3f4f6\'/%3E%3Ctext x=\'600\' y=\'337.5\' font-size=\'36\' text-anchor=\'middle\' alignment-baseline=\'middle\' font-family=\'sans-serif\' fill=\'%239ca3af\'%3E1200 x 675%3C/text%3E%3C/svg%3E';"
-              />
+              >
               
               <!-- Project Categories -->
               <div class="absolute top-3 right-3 flex flex-wrap gap-2">
@@ -63,7 +65,9 @@
             </div>
             
             <div class="p-6">
-              <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">{{ project.title }}</h3>
+              <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">
+                {{ project.title }}
+              </h3>
               
               <!-- Tech Stack -->
               <div class="flex flex-wrap gap-2 mb-4">
@@ -76,15 +80,24 @@
                 </span>
               </div>
               
-              <p class="text-gray-700 dark:text-gray-300 mb-4">{{ project.description }}</p>
+              <p class="text-gray-700 dark:text-gray-300 mb-4">
+                {{ project.description }}
+              </p>
               
               <!-- Business Impact Metrics -->
-              <div v-if="project.metrics" class="mb-6 p-3 bg-green-50 dark:bg-green-900/20 rounded-md border border-green-100 dark:border-green-800">
+              <div
+                v-if="project.metrics"
+                class="mb-6 p-3 bg-green-50 dark:bg-green-900/20 rounded-md border border-green-100 dark:border-green-800"
+              >
                 <h4 class="text-sm font-semibold text-green-800 dark:text-green-400 mb-2 flex items-center">
                   <ChartIcon class="h-4 w-4 mr-1" /> Business Impact
                 </h4>
                 <ul class="space-y-1">
-                  <li v-for="metric in project.metrics" :key="metric" class="text-sm text-gray-700 dark:text-gray-300 flex items-start">
+                  <li
+                    v-for="metric in project.metrics"
+                    :key="metric"
+                    class="text-sm text-gray-700 dark:text-gray-300 flex items-start"
+                  >
                     <ArrowUpRightIcon class="h-4 w-4 text-green-500 mt-0.5 mr-1 flex-shrink-0" />
                     <span>{{ metric }}</span>
                   </li>
@@ -116,13 +129,20 @@
           </div>
           
           <!-- Empty State -->
-          <div v-if="filteredProjects.length === 0" class="col-span-3 py-12 text-center">
+          <div
+            v-if="filteredProjects.length === 0"
+            class="col-span-3 py-12 text-center"
+          >
             <FolderXIcon class="h-16 w-16 mx-auto text-gray-400" />
-            <h3 class="mt-4 text-xl font-semibold text-gray-900 dark:text-white">No projects found</h3>
-            <p class="mt-2 text-gray-600 dark:text-gray-400">No projects match the selected filter criteria.</p>
+            <h3 class="mt-4 text-xl font-semibold text-gray-900 dark:text-white">
+              No projects found
+            </h3>
+            <p class="mt-2 text-gray-600 dark:text-gray-400">
+              No projects match the selected filter criteria.
+            </p>
             <button 
-              @click="filterCategory = null" 
-              class="mt-4 px-4 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors"
+              class="mt-4 px-4 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors" 
+              @click="filterCategory = null"
             >
               Show All Projects
             </button>
@@ -135,11 +155,16 @@
     <section class="py-16 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700 transition-colors duration-300">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center">
-          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Interested in Working Together?</h2>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+            Interested in Working Together?
+          </h2>
           <p class="text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto">
             I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
           </p>
-          <router-link to="/contact" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-primary/90 transition-colors">
+          <router-link
+            to="/contact"
+            class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-primary/90 transition-colors"
+          >
             Get in Touch
             <ArrowRightIcon class="ml-2 h-5 w-5" />
           </router-link>

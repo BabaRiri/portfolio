@@ -12,17 +12,20 @@
               Software Engineer | Automation Engineer | Web Developer
             </p>
             <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
-              Early‑career Software Engineer skilled in full‑stack Python development, cloud infrastructure, and AI‑driven automation. Blend hands‑on coding with research‑oriented problem solving to turn complex, data‑intensive workflows into reliable, production‑ready systems. Recent projects include a working‑paper automation suite that cut manual audit effort by 60 %, secured a new client contract, and on boarded 16 auditors in one week. Passionate about integrating machine‑learning and large‑language‑model techniques into development pipelines to accelerate delivery, raise product quality, and unlock measurable ROI.
+              Early-career Software Engineer skilled in full-stack Python development, cloud infrastructure, and AI-driven automation. Blend hands-on coding with research-oriented problem solving to turn complex, data-intensive workflows into reliable, production-ready systems. Recent projects include a working-paper automation suite that cut manual audit effort by 60%, secured a new client contract, and onboarded 16 auditors in one week. Passionate about integrating machine-learning and large-language-model techniques into development pipelines to accelerate delivery, raise product quality, and unlock measurable ROI.
             </p>
             <div class="flex flex-col sm:flex-row gap-4">
-              <button @click="downloadResume" 
-                class="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-lg transition-colors"
-                aria-label="Download CV as PDF">
+              <button
+                class="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-lg transition-colors" 
+                aria-label="Download CV as PDF"
+                @click="downloadResume"
+              >
                 Download CV
               </button>
-              <router-link to="/projects" 
-        git branch -av
-                class="border border-input hover:bg-accent hover:text-accent-foreground text-gray-700 dark:text-gray-300 px-6 py-3 rounded-lg text-center transition-colors">
+              <router-link
+                to="/projects"
+                class="border border-input hover:bg-accent hover:text-accent-foreground text-gray-700 dark:text-gray-300 px-6 py-3 rounded-lg text-center transition-colors"
+              >
                 View Projects
               </router-link>
             </div>
@@ -35,7 +38,7 @@
                 alt="Seward Richard Mupereri" 
                 class="w-full h-full object-cover"
                 onerror="this.onerror=null; this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'400\' viewBox=\'0 0 400 400\'%3E%3Crect width=\'400\' height=\'400\' fill=\'%23f3f4f6\'/%3E%3Ctext x=\'200\' y=\'200\' font-size=\'20\' text-anchor=\'middle\' alignment-baseline=\'middle\' font-family=\'sans-serif\' fill=\'%239ca3af\'%3E400 x 400%3C/text%3E%3C/svg%3E';"
-              />
+              >
             </div>
           </div>
         </div>
@@ -68,7 +71,7 @@
                 :alt="project.title"
                 class="w-full h-full object-cover object-center transition-all duration-300"
                 onerror="this.onerror=null; this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'1200\' height=\'675\' viewBox=\'0 0 1200 675\'%3E%3Crect width=\'1200\' height=\'675\' fill=\'%23f3f4f6\'/%3E%3Ctext x=\'600\' y=\'337.5\' font-size=\'36\' text-anchor=\'middle\' alignment-baseline=\'middle\' font-family=\'sans-serif\' fill=\'%239ca3af\'%3E1200 x 675%3C/text%3E%3C/svg%3E';"
-              />
+              >
               
               <!-- Project Categories -->
               <div class="absolute top-3 right-3 flex flex-wrap gap-2">
@@ -83,7 +86,9 @@
             </div>
             
             <div class="p-6">
-              <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">{{ project.title }}</h3>
+              <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">
+                {{ project.title }}
+              </h3>
               
               <!-- Tech Stack -->
               <div class="flex flex-wrap gap-2 mb-4">
@@ -96,7 +101,9 @@
                 </span>
               </div>
               
-              <p class="text-gray-700 dark:text-gray-300 mb-4 line-clamp-3">{{ project.description }}</p>
+              <p class="text-gray-700 dark:text-gray-300 mb-4 line-clamp-3">
+                {{ project.description }}
+              </p>
               
               <!-- Action Buttons -->
               <div class="flex space-x-3">
@@ -124,8 +131,10 @@
         </div>
         
         <div class="mt-12 text-center">
-          <router-link to="/projects" 
-            class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-primary/90 transition-colors">
+          <router-link
+            to="/projects" 
+            class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-primary/90 transition-colors"
+          >
             View All Projects
             <ArrowRightIcon class="ml-2 h-5 w-5" />
           </router-link>
@@ -140,17 +149,23 @@
     <section class="py-16 bg-white dark:bg-gray-900 transition-colors duration-300">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center">
-          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Interested in Working Together?</h2>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+            Interested in Working Together?
+          </h2>
           <p class="text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto">
             I'm actively seeking new opportunities in software engineering and automation. Let's discuss how my skills can benefit your organization.
           </p>
           <div class="flex flex-col sm:flex-row justify-center gap-4">
-            <router-link to="/contact" 
-              class="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-lg transition-colors">
+            <router-link
+              to="/contact" 
+              class="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-lg transition-colors"
+            >
               Get in Touch
             </router-link>
-            <router-link to="/projects" 
-              class="border border-input hover:bg-accent hover:text-accent-foreground text-gray-700 dark:text-gray-300 px-6 py-3 rounded-lg text-center transition-colors">
+            <router-link
+              to="/projects" 
+              class="border border-input hover:bg-accent hover:text-accent-foreground text-gray-700 dark:text-gray-300 px-6 py-3 rounded-lg text-center transition-colors"
+            >
               Explore My Work
             </router-link>
           </div>
@@ -161,64 +176,13 @@
 </template>
 
 <script setup>
-import { UserCircleIcon, CheckCircleIcon } from 'lucide-vue-next';
 import { 
-  CodeIcon, 
-  DatabaseIcon, 
-  ServerIcon, 
-  BriefcaseIcon, 
-  GlobeIcon, 
-  TerminalIcon, 
-  CloudIcon, 
-  CpuIcon, 
-  LayoutIcon,
   Folder as FolderIcon,
   Play as PlayIcon,
   Github as GithubIcon,
-  ArrowRight as ArrowRightIcon,
-  Shield as ShieldIcon
+  ArrowRight as ArrowRightIcon
 } from 'lucide-vue-next';
-// Reminder: Place your resume.pdf in the public/ folder for download functionality.
 
-const skills = [
-  { name: 'Python', icon: CodeIcon, iconColor: 'text-blue-500' },
-  { name: 'JavaScript', icon: CodeIcon, iconColor: 'text-yellow-500' },
-  { name: 'React', icon: LayoutIcon, iconColor: 'text-blue-400' },
-  { name: 'FastAPI', icon: ServerIcon, iconColor: 'text-green-500' },
-  { name: 'Pandas', icon: DatabaseIcon, iconColor: 'text-purple-500' },
-  { name: 'NumPy', icon: TerminalIcon, iconColor: 'text-blue-600' },
-  { name: 'AWS', icon: CloudIcon, iconColor: 'text-orange-500' },
-  { name: 'Git', icon: BriefcaseIcon, iconColor: 'text-red-500' },
-  { name: 'SQL', icon: DatabaseIcon, iconColor: 'text-blue-700' },
-  { name: 'LLMs', icon: CpuIcon, iconColor: 'text-indigo-500' },
-  { name: 'Linux', icon: TerminalIcon, iconColor: 'text-gray-700 dark:text-gray-300' },
-  { name: 'REST APIs', icon: GlobeIcon, iconColor: 'text-teal-500' }
-];
-
-const certifications = [
-  { 
-    name: 'AWS Certified Cloud Practitioner', 
-    icon: CloudIcon, 
-    iconColor: 'text-orange-500',
-    status: 'In Progress'
-  },
-  { 
-    name: 'Certified in Cybersecurity (CC)', 
-    icon: ShieldIcon, 
-    iconColor: 'text-blue-500',
-    status: 'In Progress'
-  },
-  { 
-    name: 'AWS AI Practitioner', 
-    icon: CpuIcon, 
-    iconColor: 'text-green-500',
-    status: 'In Progress'
-  }
-];
-
-// Featured Projects data
-
-// Featured Projects data
 const featuredProjects = [
   {
     id: 1,

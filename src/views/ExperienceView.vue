@@ -5,20 +5,31 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col items-center">
           <user-circle-icon class="h-20 w-20 text-primary mb-4" />
-          <h1 class="text-4xl font-bold text-gray-900 dark:text-white text-center">Seward Richard Mupereri</h1>
+          <h1 class="text-4xl font-bold text-gray-900 dark:text-white text-center">
+            Seward Richard Mupereri
+          </h1>
           <p class="mt-4 text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-center">
             Early-career Software Engineer skilled in full-stack development & AI-driven automation
           </p>
           <div class="mt-6 flex space-x-4">
-            <a href="#experience" class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-primary hover:bg-primary-dark transition-colors duration-200">
+            <a
+              href="#experience"
+              class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-primary hover:bg-primary-dark transition-colors duration-200"
+            >
               <briefcase-icon class="-ml-1 mr-2 h-4 w-4" />
               Experience
             </a>
-            <a href="#skills" class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-primary hover:bg-primary-dark transition-colors duration-200">
+            <a
+              href="#skills"
+              class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-primary hover:bg-primary-dark transition-colors duration-200"
+            >
               <cpu-icon class="-ml-1 mr-2 h-4 w-4" />
               Skills
             </a>
-            <a href="#education" class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-primary hover:bg-primary-dark transition-colors duration-200">
+            <a
+              href="#education"
+              class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-primary hover:bg-primary-dark transition-colors duration-200"
+            >
               <graduation-cap-icon class="-ml-1 mr-2 h-4 w-4" />
               Education
             </a>
@@ -28,12 +39,17 @@
     </header>
     
     <!-- Professional Summary Section -->
-    <section id="summary" class="py-16 bg-gradient-to-b from-gray-50 to-white dark:from-gray-800 dark:to-gray-900 transition-colors duration-300">
+    <section
+      id="summary"
+      class="py-16 bg-gradient-to-b from-gray-50 to-white dark:from-gray-800 dark:to-gray-900 transition-colors duration-300"
+    >
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col items-center mb-12">
           <zap-icon class="h-10 w-10 text-primary mb-4" />
-          <h2 class="text-3xl font-bold text-gray-900 dark:text-white text-center">Professional Summary</h2>
-          <div class="mt-2 h-1 w-20 bg-primary rounded"></div>
+          <h2 class="text-3xl font-bold text-gray-900 dark:text-white text-center">
+            Professional Summary
+          </h2>
+          <div class="mt-2 h-1 w-20 bg-primary rounded" />
         </div>
         
         <div class="bg-white dark:bg-gray-900 rounded-xl shadow-lg p-8 mb-12 animate-fadeIn border-l-4 border-primary">
@@ -47,35 +63,45 @@
           <div class="bg-white dark:bg-gray-900 rounded-xl shadow-lg p-8 animate-fadeIn animate-delay-100 h-full">
             <div class="flex items-center mb-6">
               <award-icon class="h-8 w-8 text-primary mr-3" />
-              <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Key Achievements</h3>
+              <h3 class="text-2xl font-bold text-gray-900 dark:text-white">
+                Key Achievements
+              </h3>
             </div>
             <ul class="space-y-4">
               <li class="flex items-start">
                 <check-circle-icon class="h-6 w-6 text-green-500 mt-0.5 mr-3 flex-shrink-0" />
                 <div>
                   <span class="text-gray-900 dark:text-white font-medium">Productivity Boost 🚀</span>
-                  <p class="text-gray-700 dark:text-gray-300">Automated 60% of audit working-paper prep, reducing turnaround from days to &lt; 8 hours</p>
+                  <p class="text-gray-700 dark:text-gray-300">
+                    Automated 60% of audit working-paper prep, reducing turnaround from days to &lt; 8 hours
+                  </p>
                 </div>
               </li>
               <li class="flex items-start">
                 <check-circle-icon class="h-6 w-6 text-green-500 mt-0.5 mr-3 flex-shrink-0" />
                 <div>
                   <span class="text-gray-900 dark:text-white font-medium">Client Acquisition 🤝</span>
-                  <p class="text-gray-700 dark:text-gray-300">Helped secure new client contract through tech demos and solution presentations</p>
+                  <p class="text-gray-700 dark:text-gray-300">
+                    Helped secure new client contract through tech demos and solution presentations
+                  </p>
                 </div>
               </li>
               <li class="flex items-start">
                 <check-circle-icon class="h-6 w-6 text-green-500 mt-0.5 mr-3 flex-shrink-0" />
                 <div>
                   <span class="text-gray-900 dark:text-white font-medium">Team Empowerment 👥</span>
-                  <p class="text-gray-700 dark:text-gray-300">Trained & onboarded 16 auditors in one week; achieved 100% adoption across two audit teams</p>
+                  <p class="text-gray-700 dark:text-gray-300">
+                    Trained & onboarded 16 auditors in one week; achieved 100% adoption across two audit teams
+                  </p>
                 </div>
               </li>
               <li class="flex items-start">
                 <check-circle-icon class="h-6 w-6 text-green-500 mt-0.5 mr-3 flex-shrink-0" />
                 <div>
                   <span class="text-gray-900 dark:text-white font-medium">Event Growth 📈</span>
-                  <p class="text-gray-700 dark:text-gray-300">Secured 12 event sponsors, boosting revenue and lifting event attendance by 20%</p>
+                  <p class="text-gray-700 dark:text-gray-300">
+                    Secured 12 event sponsors, boosting revenue and lifting event attendance by 20%
+                  </p>
                 </div>
               </li>
             </ul>
@@ -85,12 +111,21 @@
           <div class="bg-white dark:bg-gray-900 rounded-xl shadow-lg p-8 animate-fadeIn animate-delay-200">
             <div class="flex items-center mb-6">
               <wrench-icon class="h-8 w-8 text-primary mr-3" />
-              <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Core Skills & Tools</h3>
+              <h3 class="text-2xl font-bold text-gray-900 dark:text-white">
+                Core Skills & Tools
+              </h3>
             </div>
             <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-              <div v-for="(skill, index) in skills" :key="skill.name" 
-                   class="flex flex-col items-center p-4 bg-gray-50 dark:bg-gray-800 rounded-lg hover:shadow-md transition-all">
-                <component :is="skill.icon" class="h-8 w-8 mb-3" :class="skill.iconColor" />
+              <div
+                v-for="skill in skills"
+                :key="skill.name"
+                class="flex flex-col items-center p-4 bg-gray-50 dark:bg-gray-800 rounded-lg hover:shadow-md transition-all"
+              >
+                <component
+                  :is="skill.icon"
+                  class="h-8 w-8 mb-3"
+                  :class="skill.iconColor"
+                />
                 <span class="text-sm text-gray-700 dark:text-gray-300 font-medium text-center">{{ skill.name }}</span>
               </div>
             </div>
@@ -100,17 +135,22 @@
     </section>
 
     <!-- Professional Experience Section -->
-    <section id="experience" class="py-16 bg-gray-50 dark:bg-gray-800 transition-colors duration-300">
+    <section
+      id="experience"
+      class="py-16 bg-gray-50 dark:bg-gray-800 transition-colors duration-300"
+    >
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col items-center mb-12">
           <briefcase-icon class="h-10 w-10 text-primary mb-4" />
-          <h2 class="text-3xl font-bold text-gray-900 dark:text-white text-center">Professional Experience</h2>
-          <div class="mt-2 h-1 w-20 bg-primary rounded"></div>
+          <h2 class="text-3xl font-bold text-gray-900 dark:text-white text-center">
+            Professional Experience
+          </h2>
+          <div class="mt-2 h-1 w-20 bg-primary rounded" />
         </div>
         
         <div class="relative">
           <!-- Timeline Line -->
-          <div class="absolute left-4 md:left-16 top-0 bottom-0 w-1 bg-gradient-to-b from-primary to-secondary rounded"></div>
+          <div class="absolute left-4 md:left-16 top-0 bottom-0 w-1 bg-gradient-to-b from-primary to-secondary rounded" />
           
           <!-- Timeline Items -->
           <div class="space-y-16">
@@ -132,7 +172,9 @@
                       </span>
                     </h3>
                   </div>
-                  <p class="text-gray-700 dark:text-gray-300 text-lg font-medium">RBR Group Pty Ltd • Pretoria</p>
+                  <p class="text-gray-700 dark:text-gray-300 text-lg font-medium">
+                    RBR Group Pty Ltd • Pretoria
+                  </p>
                 </div>
                 
                 <ul class="space-y-4 mt-6 text-gray-700 dark:text-gray-300">
@@ -182,7 +224,9 @@
                       </span>
                     </h3>
                   </div>
-                  <p class="text-gray-700 dark:text-gray-300 text-lg font-medium">Bitcoin Events Ltd • Remote</p>
+                  <p class="text-gray-700 dark:text-gray-300 text-lg font-medium">
+                    Bitcoin Events Ltd • Remote
+                  </p>
                 </div>
                 
                 <ul class="space-y-4 mt-6 text-gray-700 dark:text-gray-300">
@@ -214,7 +258,10 @@
     </section>
     
     <!-- Education Main Section -->
-    <section id="education" class="py-16 bg-white dark:bg-gray-900 transition-colors duration-300">
+    <section
+      id="education"
+      class="py-16 bg-white dark:bg-gray-900 transition-colors duration-300"
+    >
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Formal Education -->
         <div class="mb-16">
@@ -233,7 +280,7 @@
                     alt="European University of Lefke" 
                     class="max-h-full"
                     onerror="this.onerror=null; this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'200\' viewBox=\'0 0 200 200\'%3E%3Crect width=\'200\' height=\'200\' fill=\'%23f3f4f6\'/%3E%3Ctext x=\'100\' y=\'100\' font-size=\'18\' text-anchor=\'middle\' alignment-baseline=\'middle\' font-family=\'sans-serif\' fill=\'%239ca3af\'%3EUNIVERSITY%3C/text%3E%3C/svg%3E';"
-                  />
+                  >
                 </div>
               </div>
               
@@ -241,8 +288,12 @@
               <div class="w-full md:w-2/3 p-8">
                 <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                   <div>
-                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">BSc Computer Engineering</h3>
-                    <p class="text-lg text-gray-700 dark:text-gray-300">European University of Lefke</p>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">
+                      BSc Computer Engineering
+                    </h3>
+                    <p class="text-lg text-gray-700 dark:text-gray-300">
+                      European University of Lefke
+                    </p>
                   </div>
                   <div class="mt-2 md:mt-0 text-right">
                     <span class="inline-block bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full text-sm">
@@ -252,7 +303,9 @@
                 </div>
                 
                 <div class="mb-6">
-                  <h4 class="text-md font-semibold text-gray-900 dark:text-white mb-2">Key Focus Areas:</h4>
+                  <h4 class="text-md font-semibold text-gray-900 dark:text-white mb-2">
+                    Key Focus Areas:
+                  </h4>
                   <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
                     <div class="flex items-center">
                       <check-circle-icon class="h-5 w-5 text-green-500 mr-2" />
@@ -274,7 +327,9 @@
                 </div>
                 
                 <div>
-                  <h4 class="text-md font-semibold text-gray-900 dark:text-white mb-2">Leadership & Activities:</h4>
+                  <h4 class="text-md font-semibold text-gray-900 dark:text-white mb-2">
+                    Leadership & Activities:
+                  </h4>
                   <div class="flex items-start">
                     <users-icon class="h-5 w-5 text-primary mt-0.5 mr-2 flex-shrink-0" />
                     <p class="text-gray-700 dark:text-gray-300 text-sm">
@@ -303,8 +358,12 @@
                     <cloud-icon class="h-6 w-6 text-blue-500 dark:text-blue-400" />
                   </div>
                   <div>
-                    <h3 class="text-lg font-bold text-gray-900 dark:text-white">AWS Certified Cloud Practitioner</h3>
-                    <p class="text-sm text-primary">Amazon Web Services</p>
+                    <h3 class="text-lg font-bold text-gray-900 dark:text-white">
+                      AWS Certified Cloud Practitioner
+                    </h3>
+                    <p class="text-sm text-primary">
+                      Amazon Web Services
+                    </p>
                   </div>
                 </div>
                 <div class="pl-16">
@@ -327,8 +386,12 @@
                     <shield-icon class="h-6 w-6 text-green-500 dark:text-green-400" />
                   </div>
                   <div>
-                    <h3 class="text-lg font-bold text-gray-900 dark:text-white">Certified in Cybersecurity (CC)</h3>
-                    <p class="text-sm text-primary">(ISC)²</p>
+                    <h3 class="text-lg font-bold text-gray-900 dark:text-white">
+                      Certified in Cybersecurity (CC)
+                    </h3>
+                    <p class="text-sm text-primary">
+                      (ISC)²
+                    </p>
                   </div>
                 </div>
                 <div class="pl-16">
@@ -351,8 +414,12 @@
                     <cpu-icon class="h-6 w-6 text-purple-500 dark:text-purple-400" />
                   </div>
                   <div>
-                    <h3 class="text-lg font-bold text-gray-900 dark:text-white">AWS AI Practitioner</h3>
-                    <p class="text-sm text-primary">Amazon Web Services</p>
+                    <h3 class="text-lg font-bold text-gray-900 dark:text-white">
+                      AWS AI Practitioner
+                    </h3>
+                    <p class="text-sm text-primary">
+                      Amazon Web Services
+                    </p>
                   </div>
                 </div>
                 <div class="pl-16">
@@ -389,21 +456,27 @@
                     <chevron-right-icon class="h-5 w-5 text-primary mt-0.5 mr-2 flex-shrink-0" />
                     <div>
                       <span class="font-medium text-gray-900 dark:text-white">Advanced Python for Data Engineering</span>
-                      <p class="text-sm text-gray-600 dark:text-gray-400">Self-paced online course focusing on data pipelines and ETL processes</p>
+                      <p class="text-sm text-gray-600 dark:text-gray-400">
+                        Self-paced online course focusing on data pipelines and ETL processes
+                      </p>
                     </div>
                   </li>
                   <li class="flex items-start">
                     <chevron-right-icon class="h-5 w-5 text-primary mt-0.5 mr-2 flex-shrink-0" />
                     <div>
                       <span class="font-medium text-gray-900 dark:text-white">Modern JavaScript & Frontend Frameworks</span>
-                      <p class="text-sm text-gray-600 dark:text-gray-400">Hands-on projects with React, Vue.js, and Next.js</p>
+                      <p class="text-sm text-gray-600 dark:text-gray-400">
+                        Hands-on projects with React, Vue.js, and Next.js
+                      </p>
                     </div>
                   </li>
                   <li class="flex items-start">
                     <chevron-right-icon class="h-5 w-5 text-primary mt-0.5 mr-2 flex-shrink-0" />
                     <div>
                       <span class="font-medium text-gray-900 dark:text-white">Cloud Architecture Patterns</span>
-                      <p class="text-sm text-gray-600 dark:text-gray-400">Building scalable, resilient systems on AWS</p>
+                      <p class="text-sm text-gray-600 dark:text-gray-400">
+                        Building scalable, resilient systems on AWS
+                      </p>
                     </div>
                   </li>
                 </ul>
@@ -420,21 +493,27 @@
                     <chevron-right-icon class="h-5 w-5 text-primary mt-0.5 mr-2 flex-shrink-0" />
                     <div>
                       <span class="font-medium text-gray-900 dark:text-white">Technical Documentation & Communication</span>
-                      <p class="text-sm text-gray-600 dark:text-gray-400">Creating clear, accessible documentation for technical products</p>
+                      <p class="text-sm text-gray-600 dark:text-gray-400">
+                        Creating clear, accessible documentation for technical products
+                      </p>
                     </div>
                   </li>
                   <li class="flex items-start">
                     <chevron-right-icon class="h-5 w-5 text-primary mt-0.5 mr-2 flex-shrink-0" />
                     <div>
                       <span class="font-medium text-gray-900 dark:text-white">Agile Project Management</span>
-                      <p class="text-sm text-gray-600 dark:text-gray-400">Implementing Scrum and Kanban methodologies in development teams</p>
+                      <p class="text-sm text-gray-600 dark:text-gray-400">
+                        Implementing Scrum and Kanban methodologies in development teams
+                      </p>
                     </div>
                   </li>
                   <li class="flex items-start">
                     <chevron-right-icon class="h-5 w-5 text-primary mt-0.5 mr-2 flex-shrink-0" />
                     <div>
                       <span class="font-medium text-gray-900 dark:text-white">Business Analysis for Developers</span>
-                      <p class="text-sm text-gray-600 dark:text-gray-400">Translating business requirements into technical specifications</p>
+                      <p class="text-sm text-gray-600 dark:text-gray-400">
+                        Translating business requirements into technical specifications
+                      </p>
                     </div>
                   </li>
                 </ul>
@@ -446,12 +525,17 @@
     </section>
 
     <!-- Skills Spotlight Section -->
-    <section id="skills" class="py-16 bg-gray-50 dark:bg-gray-800 transition-colors duration-300 border-t border-gray-200 dark:border-gray-700">
+    <section
+      id="skills"
+      class="py-16 bg-gray-50 dark:bg-gray-800 transition-colors duration-300 border-t border-gray-200 dark:border-gray-700"
+    >
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col items-center mb-12">
           <cpu-icon class="h-10 w-10 text-primary mb-4" />
-          <h2 class="text-3xl font-bold text-gray-900 dark:text-white text-center">Technical Skills</h2>
-          <div class="mt-2 h-1 w-20 bg-primary rounded"></div>
+          <h2 class="text-3xl font-bold text-gray-900 dark:text-white text-center">
+            Technical Skills
+          </h2>
+          <div class="mt-2 h-1 w-20 bg-primary rounded" />
         </div>
         
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -459,7 +543,9 @@
           <div class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg border-t-4 border-primary hover:shadow-xl transition-shadow duration-300">
             <div class="flex items-center mb-6">
               <code-icon class="h-8 w-8 text-primary mr-3" />
-              <h3 class="text-xl font-bold text-gray-900 dark:text-white">Development</h3>
+              <h3 class="text-xl font-bold text-gray-900 dark:text-white">
+                Development
+              </h3>
             </div>
             <ul class="space-y-3 text-gray-700 dark:text-gray-300">
               <li class="flex items-center">
@@ -489,7 +575,9 @@
           <div class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg border-t-4 border-secondary hover:shadow-xl transition-shadow duration-300">
             <div class="flex items-center mb-6">
               <server-icon class="h-8 w-8 text-secondary mr-3" />
-              <h3 class="text-xl font-bold text-gray-900 dark:text-white">Infrastructure</h3>
+              <h3 class="text-xl font-bold text-gray-900 dark:text-white">
+                Infrastructure
+              </h3>
             </div>
             <ul class="space-y-3 text-gray-700 dark:text-gray-300">
               <li class="flex items-center">
@@ -519,7 +607,9 @@
           <div class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg border-t-4 border-purple-500 hover:shadow-xl transition-shadow duration-300">
             <div class="flex items-center mb-6">
               <brain-icon class="h-8 w-8 text-purple-500 mr-3" />
-              <h3 class="text-xl font-bold text-gray-900 dark:text-white">AI & Advanced</h3>
+              <h3 class="text-xl font-bold text-gray-900 dark:text-white">
+                AI & Advanced
+              </h3>
             </div>
             <ul class="space-y-3 text-gray-700 dark:text-gray-300">
               <li class="flex items-center">
@@ -553,15 +643,26 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col md:flex-row items-center justify-between bg-gradient-to-r from-primary/10 to-secondary/10 p-8 rounded-xl">
           <div class="mb-6 md:mb-0">
-            <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Let's Connect</h2>
-            <p class="text-gray-600 dark:text-gray-400 mt-2">Interested in discussing how my skills could benefit your team?</p>
+            <h2 class="text-2xl font-bold text-gray-900 dark:text-white">
+              Let's Connect
+            </h2>
+            <p class="text-gray-600 dark:text-gray-400 mt-2">
+              Interested in discussing how my skills could benefit your team?
+            </p>
           </div>
           <div class="flex space-x-4">
-            <a href="/resume.pdf" download class="bg-white dark:bg-gray-800 text-gray-900 dark:text-white border border-gray-300 dark:border-gray-700 px-6 py-3 rounded-lg shadow-sm hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors flex items-center">
+            <a
+              href="/resume.pdf"
+              download
+              class="bg-white dark:bg-gray-800 text-gray-900 dark:text-white border border-gray-300 dark:border-gray-700 px-6 py-3 rounded-lg shadow-sm hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors flex items-center"
+            >
               <download-icon class="h-5 w-5 mr-2" />
               Download CV
             </a>
-            <router-link to="/contact" class="bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-lg shadow-sm transition-colors flex items-center">
+            <router-link
+              to="/contact"
+              class="bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-lg shadow-sm transition-colors flex items-center"
+            >
               <mail-icon class="h-5 w-5 mr-2" />
               Contact Me
             </router-link>
@@ -579,7 +680,7 @@ import {
   CheckCircleIcon, 
   CodeIcon, 
   UsersIcon, 
-  TrendingUpIcon, 
+ 
   ChevronRightIcon, 
   UserCircleIcon, 
   ShieldIcon, 
@@ -587,8 +688,6 @@ import {
   BarChartIcon, 
   CloudIcon, 
   ServerIcon, 
-  TableIcon, 
-  BoxIcon, 
   GitBranchIcon, 
   DatabaseIcon,
   

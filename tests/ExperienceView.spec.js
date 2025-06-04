@@ -8,15 +8,63 @@ const globalStubs = {
     props: ['to'],
     template: '<a :href="to"><slot /></a>'
   },
+  // Icon stubs in both kebab-case and PascalCase
   'user-circle-icon': { template: '<user-circle-icon />' },
+  'UserCircleIcon': { template: '<user-circle-icon />' },
   'briefcase-icon': { template: '<briefcase-icon />' },
+  'BriefcaseIcon': { template: '<briefcase-icon />' },
   'cpu-icon': { template: '<cpu-icon />' },
+  'CpuIcon': { template: '<cpu-icon />' },
   'graduation-cap-icon': { template: '<graduation-cap-icon />' },
+  'GraduationCapIcon': { template: '<graduation-cap-icon />' },
   'zap-icon': { template: '<zap-icon />' },
+  'ZapIcon': { template: '<zap-icon />' },
   'award-icon': { template: '<award-icon />' },
+  'AwardIcon': { template: '<award-icon />' },
   'check-circle-icon': { template: '<check-circle-icon />' },
+  'CheckCircleIcon': { template: '<check-circle-icon />' },
   'line-chart-icon': { template: '<line-chart-icon />' },
-  'book-open-icon': { template: '<book-open-icon />' }
+  'LineChartIcon': { template: '<line-chart-icon />' },
+  'book-open-icon': { template: '<book-open-icon />' },
+  'BookOpenIcon': { template: '<book-open-icon />' },
+  'wrench-icon': { template: '<wrench-icon />' },
+  'WrenchIcon': { template: '<wrench-icon />' },
+  'rocket-icon': { template: '<rocket-icon />' },
+  'RocketIcon': { template: '<rocket-icon />' },
+  'presentation-icon': { template: '<presentation-icon />' },
+  'PresentationIcon': { template: '<presentation-icon />' },
+  'users-icon': { template: '<users-icon />' },
+  'UsersIcon': { template: '<users-icon />' },
+  'file-text-icon': { template: '<file-text-icon />' },
+  'FileTextIcon': { template: '<file-text-icon />' },
+  'search-icon': { template: '<search-icon />' },
+  'SearchIcon': { template: '<search-icon />' },
+  'users2-icon': { template: '<users2-icon />' },
+  'Users2Icon': { template: '<users2-icon />' },
+  'badge-check-icon': { template: '<badge-check-icon />' },
+  'BadgeCheckIcon': { template: '<badge-check-icon />' },
+  'brain-icon': { template: '<brain-icon />' },
+  'BrainIcon': { template: '<brain-icon />' },
+  'download-icon': { template: '<download-icon />' },
+  'DownloadIcon': { template: '<download-icon />' },
+  'mail-icon': { template: '<mail-icon />' },
+  'MailIcon': { template: '<mail-icon />' },
+  'shield-icon': { template: '<shield-icon />' },
+  'ShieldIcon': { template: '<shield-icon />' },
+  'chevron-right-icon': { template: '<chevron-right-icon />' },
+  'ChevronRightIcon': { template: '<chevron-right-icon />' },
+  'bar-chart-icon': { template: '<bar-chart-icon />' },
+  'BarChartIcon': { template: '<bar-chart-icon />' },
+  'cloud-icon': { template: '<cloud-icon />' },
+  'CloudIcon': { template: '<cloud-icon />' },
+  'server-icon': { template: '<server-icon />' },
+  'ServerIcon': { template: '<server-icon />' },
+  'git-branch-icon': { template: '<git-branch-icon />' },
+  'GitBranchIcon': { template: '<git-branch-icon />' },
+  'database-icon': { template: '<database-icon />' },
+  'DatabaseIcon': { template: '<database-icon />' },
+  'clock-icon': { template: '<clock-icon />' },
+  'ClockIcon': { template: '<clock-icon />' }
 };
 
 describe('ExperienceView.vue', () => {
@@ -63,13 +111,19 @@ describe('ExperienceView.vue', () => {
   });
 
   it('renders all icons without runtime errors', () => {
-    // Check for at least one icon component stub (PascalCase)
+    // List of all icons expected to be rendered (from template and imports)
     const iconComponents = [
       'UserCircleIcon', 'BriefcaseIcon', 'CpuIcon', 'GraduationCapIcon', 'ZapIcon',
-      'AwardIcon', 'CheckCircleIcon', 'LineChartIcon', 'BookOpenIcon'
+      'AwardIcon', 'CheckCircleIcon', 'LineChartIcon', 'BookOpenIcon',
+      'WrenchIcon', 'RocketIcon', 'PresentationIcon', 'UsersIcon', 'FileTextIcon',
+      'SearchIcon', 'Users2Icon', 'BadgeCheckIcon', 'BrainIcon', 'DownloadIcon',
+      'MailIcon', 'ShieldIcon', 'ChevronRightIcon', 'BarChartIcon', 'CloudIcon',
+      'ServerIcon', 'GitBranchIcon', 'DatabaseIcon', 'ClockIcon'
     ];
-    const found = iconComponents.some(name => wrapper.findAllComponents({ name }).length > 0);
-    expect(found).toBe(true);
+    const missingIcons = iconComponents.filter(
+      name => wrapper.findAllComponents({ name }).length === 0
+    );
+    expect(missingIcons, `Missing icons: ${missingIcons.join(', ')}`).toHaveLength(0);
   });
 
   it('should be accessible: all buttons and links have labels or text', () => {

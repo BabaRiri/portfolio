@@ -3,26 +3,44 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div class="space-y-4">
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Seward Richard Mupereri</h3>
-          <p class="text-gray-600 dark:text-gray-400 text-sm">Automation Engineer | Software Engineer | Junior Solutions Consultant</p>
-          <p class="text-gray-600 dark:text-gray-400 text-sm">Based in Pretoria, South Africa</p>
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+            Seward Richard Mupereri
+          </h3>
+          <p class="text-gray-600 dark:text-gray-400 text-sm">
+            Automation Engineer | Software Engineer | Junior Solutions Consultant
+          </p>
+          <p class="text-gray-600 dark:text-gray-400 text-sm">
+            Based in Pretoria, South Africa
+          </p>
         </div>
         
         <div class="space-y-4">
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Connect</h3>
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+            Connect
+          </h3>
           <div class="flex space-x-4">
-            <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" 
-               class="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">
+            <a
+              href="https://linkedin.com/in/yourprofile"
+              target="_blank"
+              rel="noopener noreferrer" 
+              class="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors"
+            >
               <linkedin-icon class="h-5 w-5" />
               <span class="sr-only">LinkedIn</span>
             </a>
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer"
-               class="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">
+            <a
+              href="https://github.com/yourusername"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors"
+            >
               <github-icon class="h-5 w-5" />
               <span class="sr-only">GitHub</span>
             </a>
-            <a href="mailto:sewardrichardmupereri@gmail.com"
-               class="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">
+            <a
+              href="mailto:sewardrichardmupereri@gmail.com"
+              class="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors"
+            >
               <mail-icon class="h-5 w-5" />
               <span class="sr-only">Email</span>
             </a>
@@ -30,14 +48,23 @@
         </div>
         
         <div class="space-y-4">
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Quick Links</h3>
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+            Quick Links
+          </h3>
           <nav class="flex flex-col space-y-2">
-            <router-link v-for="item in navItems" :key="item.name" :to="item.to"
-              class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white text-sm transition-colors">
+            <router-link
+              v-for="item in navItems"
+              :key="item.name"
+              :to="item.to"
+              class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white text-sm transition-colors"
+            >
               {{ item.name }}
             </router-link>
-            <a href="#" @click.prevent="downloadResume" 
-               class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white text-sm transition-colors">
+            <a
+              href="#"
+              class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white text-sm transition-colors" 
+              @click.prevent="downloadResume"
+            >
               Resume
             </a>
           </nav>
